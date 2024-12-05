@@ -145,3 +145,28 @@
       solver_calls_made:          462
       solver_calls_failed:            0
       solver_iterations:         2161
+    - inlist: inlist_make_late_pre_zams_header
+      runtime_minutes:   0.21
+      model_number:           93
+      star_age:     1.0000000000000000E+03
+      num_retries:            0
+      log_rel_run_E_err:        -8.7920523234258230
+      steps:          768
+      retries:            9
+      redos:            0
+      solver_calls_made:          777
+      solver_calls_failed:            9
+      solver_iterations:         2073
+    - inlist: inlist_to_zams_header
+      runtime_minutes:   0.15
+      model_number:           42
+      star_age:     3.4544780888011679E+05
+      num_retries:            0
+      log_rel_run_E_err:        -7.0667174113645297
+      steps:          118
+      retries:            0
+      redos:            0
+      solver_calls_made:          118
+      solver_calls_failed:            0
+      solver_iterations:          435
+    - inlist: inlist_to_end_core_he_burn_header
