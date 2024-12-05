@@ -19,10 +19,10 @@
       new_cumulative_energy_error = 0d0
 
       change_initial_Z = .true.
-
-      set_initial_rotation = .true.
+      
+      set_omega = .true.
       new_rotation_flag = .true.
-      new_omega = 1d-4  ! Fixed angular velocity in rad/s
+      new_omega = 1d-4
 
       near_zams_relax_omega_div_omega_crit = .true.
       change_rotation_flag = .false.  ! rotation off until near zams
