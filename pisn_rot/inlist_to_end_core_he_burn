@@ -138,6 +138,42 @@
 
 &pgstar
 
+! Enable PGSTAR
+pgstar_flag = .true.
 
+! Hertzsprung-Russell (HR) Diagram
+HR_diagram_flag = .true.                 ! Enable HR diagram plotting
+HR_diagram_file_flag = .true.            ! Save HR diagram to file
+HR_diagram_file_type = 'png'             ! File format (e.g., png, pdf)
+HR_diagram_file_interval = 100           ! Save every 100 steps
+HR_diagram_file_name = 'HR_diagram.png'  ! File name
+
+! Kippenhahn Diagram (Internal Structure)
+Kippenhahn_flag = .true.                 ! Enable Kippenhahn diagram
+Kippenhahn_file_flag = .true.            ! Save Kippenhahn diagram to file
+Kippenhahn_file_type = 'png'             ! File format
+Kippenhahn_file_interval = 100           ! Save every 100 steps
+Kippenhahn_file_name = 'Kippenhahn.png'  ! File name
+
+! Central Conditions Plot
+center_conditions_flag = .true.                  ! Enable central conditions plot
+center_conditions_file_flag = .true.             ! Save to file
+center_conditions_file_type = 'png'              ! File format
+center_conditions_file_interval = 100            ! Save every 100 steps
+center_conditions_file_name = 'Center_conditions.png'  ! File name
+
+! Additional Plot Configurations
+history_flag = .true.                            ! Enable history plot
+history_file_flag = .true.                       ! Save history plot to file
+history_file_type = 'png'                        ! File format
+! history_file_interval = 100                      ! Save every 100 steps
+history_file_name = 'History.png'                ! File name
+
+! Stop saving plots if you prefer only the final state
+! Uncomment these lines for one-time save at the end
+HR_diagram_file_interval = -1
+Kippenhahn_file_interval = -1
+center_conditions_file_interval = -1
+history_file_interval = -1
 
 / ! end of pgstar namelist
