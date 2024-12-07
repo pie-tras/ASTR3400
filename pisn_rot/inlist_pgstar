@@ -449,7 +449,7 @@ Abundance_log_mass_frac_max =  0.3
 Abundance_file_flag = .true.
 Abundance_file_dir = 'plots/abundance'
 Abundance_file_prefix = 'abund_'
-Abundacne_file_interval = 50
+Abundance_file_interval = 50
 Abundance_file_width = 10       ! (inches) negative means use same value as for window
 Abundance_file_aspect_ratio = -1 ! negative means use same value as for window
 
