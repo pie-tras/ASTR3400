@@ -148,11 +148,11 @@ Profile_Panels3_xaxis_reversed = .true.
 !------------------------------------------------------------------------------------
 
 !Profile_Panels1_win_flag = .true.
-!Profile_Panels1_file_flag = .true.
-    Profile_Panels1_file_dir = 'png'
+Profile_Panels1_file_flag = .true.
+    Profile_Panels1_file_dir = 'plots/profile_panels1'
     Profile_Panels1_file_prefix = 'profile_panels1_'
-    Profile_Panels1_file_interval = 1
-    Profile_Panels1_file_width = -1
+    Profile_Panels1_file_interval = 50
+    Profile_Panels1_file_width = 10
     Profile_Panels1_file_aspect_ratio = -1
 
 Profile_Panels1_title = ''
@@ -196,7 +196,7 @@ TRho_Profile_win_aspect_ratio = 0.75 ! aspect_ratio = height/width
          
 ! file output
 TRho_Profile_file_flag = .true.
-TRho_Profile_file_dir = 'TRho'
+TRho_Profile_file_dir = 'plots/TRho'
 TRho_Profile_file_prefix = 'trho_'
 TRho_Profile_file_interval = 50 ! output when `mod(model_number,TRho_Profile_file_interval)==0`
 TRho_Profile_file_width = 10 ! (inches) negative means use same value as for window
@@ -330,6 +330,14 @@ Text_Summary1_name(6,4) = 'Si_cntr'
 Text_Summary1_name(6,5) = 'retries'
 
 
+! file output
+Text_Summary1_file_flag = .true.
+Text_Summary1_file_dir = 'plots/text'
+Text_Summary1_file_prefix = 'text_'
+Text_Summary1_file_interval = 50 ! output when `mod(model_number,TRho_Profile_file_interval)==0`
+Text_Summary1_file_width = 10 ! (inches) negative means use same value as for window
+Text_Summary1_file_aspect_ratio = -1 ! negative means use same value as for window
+
 !------------------------------------------------------------------------------------
 
 
@@ -386,6 +394,13 @@ History_Panels2_other_ymin(3) = -101d0
 History_Panels2_other_ymax(3) = -101d0
 History_Panels2_other_dymin(3) = 0.8
 
+! file output
+History_Panels2_file_flag = .true.
+History_Panels2_file_dir = 'plots/history2'
+History_Panels2_file_prefix = 'history2_'
+History_Panels2_file_interval = 50 ! output when `mod(model_number,TRho_Profile_file_interval)==0`
+History_Panels2_file_width = 10 ! (inches) negative means use same value as for window
+History_Panels2_file_aspect_ratio = -1 ! negative means use same value as for window
 
 !------------------------------------------------------------------------------------
 
@@ -667,6 +682,14 @@ Mixing_file_aspect_ratio = -1 ! negative means use same value as for window
     History_Panels1_other_ymin(3) = -101d0
     History_Panels1_other_ymax(3) = -101d0
     History_Panels1_other_dymin(3) = 0.01
+
+    ! file output
+    History_Panels1_file_flag = .true.
+    History_Panels1_file_dir = 'plots/history1'
+    History_Panels1_file_prefix = 'history1_'
+    History_Panels1_file_interval = 50 ! output when `mod(model_number,TRho_Profile_file_interval)==0`
+    History_Panels1_file_width = 10 ! (inches) negative means use same value as for window
+    History_Panels1_file_aspect_ratio = -1 ! negative means use same value as for window
 
 
 !-----------------------------------------------------------------------
