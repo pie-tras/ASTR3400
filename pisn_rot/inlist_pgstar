@@ -329,15 +329,6 @@ Text_Summary1_name(6,3) = 'lg_Lphoto'
 Text_Summary1_name(6,4) = 'Si_cntr'
 Text_Summary1_name(6,5) = 'retries'
 
-
-! file output
-Text_Summary1_file_flag = .true.
-Text_Summary1_file_dir = 'plots/text'
-Text_Summary1_file_prefix = 'text_'
-Text_Summary1_file_interval = 50 ! output when `mod(model_number,TRho_Profile_file_interval)==0`
-Text_Summary1_file_width = 10 ! (inches) negative means use same value as for window
-Text_Summary1_file_aspect_ratio = -1 ! negative means use same value as for window
-
 !------------------------------------------------------------------------------------
 
 
