@@ -20,10 +20,10 @@ Grid1_win_width = 10
 Grid1_win_aspect_ratio = 0.666
 
 ! file output
-!Grid1_file_flag = .true.
-Grid1_file_dir = 'png'
+Grid1_file_flag = .true.
+Grid1_file_dir = 'plots/grid'
 Grid1_file_prefix = 'cc_'
-Grid1_file_interval = 25     ! output when mod(model_number,Grid1_file_interval)==0
+Grid1_file_interval = 50     ! output when mod(model_number,Grid1_file_interval)==0
 Grid1_file_width = -1       ! (inches) negative means use same value as for window
 Grid1_file_aspect_ratio = -1 ! negative means use same value as for window
 
@@ -195,11 +195,11 @@ TRho_Profile_win_width = 8
 TRho_Profile_win_aspect_ratio = 0.75 ! aspect_ratio = height/width
          
 ! file output
-!TRho_Profile_file_flag = .true.
+TRho_Profile_file_flag = .true.
 TRho_Profile_file_dir = 'TRho'
 TRho_Profile_file_prefix = 'trho_'
-TRho_Profile_file_interval = 10 ! output when `mod(model_number,TRho_Profile_file_interval)==0`
-TRho_Profile_file_width = -1 ! (inches) negative means use same value as for window
+TRho_Profile_file_interval = 50 ! output when `mod(model_number,TRho_Profile_file_interval)==0`
+TRho_Profile_file_width = 10 ! (inches) negative means use same value as for window
 TRho_Profile_file_aspect_ratio = -1 ! negative means use same value as for window
          
 TRho_Profile_xleft = 0.15
@@ -446,10 +446,11 @@ Abundance_log_mass_frac_min = -6.4 ! -3.5
 Abundance_log_mass_frac_max =  0.3
          
 ! file output
-Abundance_file_flag = .false.
-Abundance_file_dir = 'Abundance'
+Abundance_file_flag = .true.
+Abundance_file_dir = 'plots/abundance'
 Abundance_file_prefix = 'abund_'
-Abundance_file_width = -1        ! (inches) negative means use same value as for window
+Abundacne_file_interval = 50
+Abundance_file_width = 10       ! (inches) negative means use same value as for window
 Abundance_file_aspect_ratio = -1 ! negative means use same value as for window
 
 
@@ -477,11 +478,11 @@ Power_ymin = -5.0 !   -101d0 ! only used if /= -101d0
 Power_ymax = 25.0 ! -101d0 ! only used if /= -101d0
 
 ! file output
-Power_file_flag = .false.
-Power_file_dir = 'png'
+Power_file_flag = .true.
+Power_file_dir = 'plots/power'
 Power_file_prefix = 'power_'
-Power_file_interval = 5 ! output when mod(model_number,Power_file_interval)==0
-Power_file_width = -1 ! (inches) negative means use same value as for window
+Power_file_interval = 50 ! output when mod(model_number,Power_file_interval)==0
+Power_file_width = 10 ! (inches) negative means use same value as for window
 Power_file_aspect_ratio = -1 ! negative means use same value as for window
 
 
@@ -496,11 +497,11 @@ Mixing_legend_txt_scale_factor = 1.4 ! relative to other text
 Mixing_show_rotation_details = .false.
 
 !Mixing_win_flag = .true.
-!Mixing_file_flag = .true.
-Mixing_file_dir = 'png'
+Mixing_file_flag = .true.
+Mixing_file_dir = 'plots/mixing'
 Mixing_file_prefix = 'mixing_'
-Mixing_file_interval = 1 ! output when `mod(model_number,Mixing_file_interval)==0`
-Mixing_file_width = -1 ! (inches) negative means use same value as for window
+Mixing_file_interval = 50 ! output when `mod(model_number,Mixing_file_interval)==0`
+Mixing_file_width = 10 ! (inches) negative means use same value as for window
 Mixing_file_aspect_ratio = -1 ! negative means use same value as for window
 
 
@@ -587,12 +588,11 @@ Mixing_file_aspect_ratio = -1 ! negative means use same value as for window
 
          ! Enables calling a subroutine to add extra information to a plot
          ! see `$MESA_DIR/star/other/pgstar_decorator.f90`
-         HR_use_decorator = .false.
-
+         HR_use_decorator = .true.
 
          ! file output
          HR_file_flag = .true.
-         HR_file_dir = 'png'
+         HR_file_dir = 'plots/hr'
          HR_file_prefix = 'hr_'
          HR_file_interval = 50 ! output when `mod(model_number,HR_file_interval)==0`
          HR_file_width = 10 ! (inches) negative means use same value as for window
