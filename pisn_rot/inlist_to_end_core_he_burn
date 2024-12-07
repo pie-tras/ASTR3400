@@ -4,7 +4,8 @@
 
       load_saved_model = .true.
       load_model_filename = 'zams.mod'
-      
+
+      save_pgstar_files_when_terminate = .true.
       save_model_when_terminate = .true.
       save_model_filename = 'after_core_he_burn.mod'
       required_termination_code_string = 'xa_central_lower_limit'
@@ -138,42 +139,20 @@
 
 &pgstar
 
-! Enable PGSTAR
-pgstar_flag = .true.
+Grid1_file_flag = .true.
+Grid1_file_dir = 'pgstar_plots/'
 
-! Hertzsprung-Russell (HR) Diagram
-HR_diagram_flag = .true.                 ! Enable HR diagram plotting
-HR_diagram_file_flag = .true.            ! Save HR diagram to file
-HR_diagram_file_type = 'png'             ! File format (e.g., png, pdf)
-HR_diagram_file_interval = 100           ! Save every 100 steps
-HR_diagram_file_name = 'HR_diagram.png'  ! File name
+!pause = .true.
+Grid1_plot_name(3) = 'HR'
+Profile_Panels3_xmin = -101d0
+Profile_Panels3_xmax = -101d0
+Profile_Panels3_other_yaxis_name(4) = 'entropy'
 
-! Kippenhahn Diagram (Internal Structure)
-Kippenhahn_flag = .true.                 ! Enable Kippenhahn diagram
-Kippenhahn_file_flag = .true.            ! Save Kippenhahn diagram to file
-Kippenhahn_file_type = 'png'             ! File format
-Kippenhahn_file_interval = 100           ! Save every 100 steps
-Kippenhahn_file_name = 'Kippenhahn.png'  ! File name
+TRho_Profile_xmin = -5
+TRho_Profile_xmax = 7.5
+TRho_Profile_ymin = 5.5
+TRho_Profile_ymax = 9.2
 
-! Central Conditions Plot
-center_conditions_flag = .true.                  ! Enable central conditions plot
-center_conditions_file_flag = .true.             ! Save to file
-center_conditions_file_type = 'png'              ! File format
-center_conditions_file_interval = 100            ! Save every 100 steps
-center_conditions_file_name = 'Center_conditions.png'  ! File name
-
-! Additional Plot Configurations
-history_flag = .true.                            ! Enable history plot
-history_file_flag = .true.                       ! Save history plot to file
-history_file_type = 'png'                        ! File format
-! history_file_interval = 100                      ! Save every 100 steps
-history_file_name = 'History.png'                ! File name
-
-! Stop saving plots if you prefer only the final state
-! Uncomment these lines for one-time save at the end
-HR_diagram_file_interval = -1
-Kippenhahn_file_interval = -1
-center_conditions_file_interval = -1
-history_file_interval = -1
+Text_Summary1_name(2,2) = 'star_age'
 
 / ! end of pgstar namelist
