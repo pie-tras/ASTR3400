@@ -15,7 +15,7 @@
       set_initial_age = .false.
       set_initial_number_retries = .false.
 
-      !pgstar_flag = .true.
+      pgstar_flag = .true.
 
       !pause_before_terminate = .true.
       !save_pgstar_files_when_terminate = .true.
