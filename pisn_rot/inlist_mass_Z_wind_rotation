@@ -2,7 +2,7 @@
 
 &star_job
    new_Z = 0.0d0
-   new_omega_div_omega_crit = 0.3d0
+   new_omega_div_omega_crit = 0.4d0
 / ! end of star_job namelist
 
 &kap
