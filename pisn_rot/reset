@@ -10,8 +10,8 @@ cat > inlist_mass_Z_wind_rotation <<- EOM
 ! inlist_mass_Z_wind_rotation
 
 &star_job
-   new_Z = $1 d0
-   new_omega_div_omega_crit = 0.0d0
+   new_Z = 0.0d0
+   new_omega_div_omega_crit = $1d0
 / ! end of star_job namelist
 
 &kap
@@ -29,3 +29,8 @@ EOM
 cat inlist_mass_Z_wind_rotation
 
 ./mk
+
+./rn
+
+cp -r LOGS/ ../LOGS_ROT_$1
+cp -r plots/ ../LOGS_ROT_$1/plots/
