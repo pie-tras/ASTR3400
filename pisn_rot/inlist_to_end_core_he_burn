@@ -136,11 +136,13 @@
 / ! end of controls namelist
 
 
-
 &pgstar
 
 Grid1_file_flag = .true.
 Grid1_file_dir = 'pgstar_plots/'
+
+file_device = 'eps'
+file_extension = 'eps'
 
 !pause = .true.
 Grid1_plot_name(3) = 'HR'
