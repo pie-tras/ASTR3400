@@ -20,7 +20,7 @@ Grid1_win_width = 10
 Grid1_win_aspect_ratio = 0.666
 
 ! file output
-Grid1_file_flag = .true.
+Grid1_file_flag = .false.
 Grid1_file_dir = 'plots/grid'
 Grid1_file_prefix = 'cc_'
 Grid1_file_interval = 50     ! output when mod(model_number,Grid1_file_interval)==0

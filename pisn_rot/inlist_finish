@@ -145,9 +145,9 @@
       !pause = .true.
 
       Grid1_file_flag = .true.
-      Grid1_file_dir = 'png'
-      Grid1_file_prefix = 'cc_'
-      Grid1_file_interval = 10     ! output when mod(model_number,Grid1_file_interval)==0
+      Grid1_file_dir = 'plots/finish'
+      !Grid1_file_prefix = 'cc_'
+      !Grid1_file_interval = 10     ! output when mod(model_number,Grid1_file_interval)==0
 
       !History_Panels2_xaxis_name = 'star_age'
       History_Panels2_automatic_star_age_units = .true.
