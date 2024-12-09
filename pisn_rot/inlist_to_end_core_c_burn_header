@@ -37,10 +37,6 @@
 
 
 &pgstar
-
-      Grid1_file_flag = .true.
-      Grid1_file_dir = 'plots/c'
-
       read_extra_pgstar_inlist(1) = .true.
       extra_pgstar_inlist_name(1)= 'inlist_pgstar'
       read_extra_pgstar_inlist(2) = .true.

@@ -18,7 +18,7 @@
       set_initial_model_number = .true.
       set_initial_number_retries = .true.
 
-      pgstar_flag = .false.
+      pgstar_flag = .true.
 
 / ! end of star_job namelist
 
@@ -125,6 +125,8 @@
 
 &pgstar
 
+Grid1_file_flag = .true.
+Grid1_file_dir = 'plots/3_envelope'
 
 Profile_Panels3_xmin = 0 ! 2.5 ! -101d0
 Profile_Panels3_xmax = -101d0 ! 

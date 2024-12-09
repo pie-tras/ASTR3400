@@ -145,7 +145,7 @@
       !pause = .true.
 
       Grid1_file_flag = .true.
-      Grid1_file_dir = 'plots/finish'
+      Grid1_file_dir = 'plots/6_finish'
       !Grid1_file_prefix = 'cc_'
       !Grid1_file_interval = 10     ! output when mod(model_number,Grid1_file_interval)==0
 

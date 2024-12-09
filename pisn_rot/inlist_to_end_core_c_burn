@@ -16,7 +16,7 @@
       chem_name1 = 'h1'
       chem_name2 = 'he4'
 
-      !pgstar_flag = .false.
+      pgstar_flag = .true.
 
 / ! end of star_job namelist
 
@@ -141,6 +141,9 @@
 
 !pause = .true.
 !pgstar_interval = 1
+
+Grid1_file_flag = .true.
+Grid1_file_dir = 'plots/4_c'
 
 Profile_Panels3_xmin = 0 ! 2.5 ! -101d0
 Profile_Panels3_xmax = -101d0 ! 

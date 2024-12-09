@@ -139,7 +139,7 @@
 &pgstar
 
 Grid1_file_flag = .true.
-Grid1_file_dir = 'plots/he'
+Grid1_file_dir = 'plots/2_he'
 
 !pause = .true.
 Grid1_plot_name(3) = 'HR'

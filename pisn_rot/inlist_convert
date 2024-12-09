@@ -128,7 +128,7 @@
 &pgstar
 
 Grid1_file_flag = .true.
-Grid1_file_dir = 'plots/convert'
+Grid1_file_dir = 'plots/5_convert'
 
 !pause = .true.
 Profile_Panels3_xmin = 0 ! -101d0
