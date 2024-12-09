@@ -6,25 +6,25 @@ source "${MESA_DIR}/star/test_suite/test_suite_helpers"
 
 date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
 
-do_one inlist_make_late_pre_zams_header late_pre_zams.mod LOGS/0_pre_zams
+do_one inlist_make_late_pre_zams_header late_pre_zams.mod 0_pre_zams
 cp late_pre_zams.mod standard_late_pre_zams.mod
 
-do_one inlist_to_zams_header zams.mod LOGS/1_zams
+do_one inlist_to_zams_header zams.mod 1_zams
 cp zams.mod standard_zams.mod
 
-do_one inlist_to_end_core_he_burn_header after_core_he_burn.mod LOGS/2_he
+do_one inlist_to_end_core_he_burn_header after_core_he_burn.mod 2_he
 cp after_core_he_burn.mod standard_after_core_he_burn.mod
 
-do_one inlist_remove_envelope_header removed_envelope.mod LOGS/3_envelope
+do_one inlist_remove_envelope_header removed_envelope.mod 3_envelope
 cp removed_envelope.mod standard_removed_envelope.mod
 
-do_one inlist_to_end_core_c_burn_header after_core_c_burn.mod LOGS/4_c
+do_one inlist_to_end_core_c_burn_header after_core_c_burn.mod 4_c
 cp after_core_c_burn.mod standard_after_core_c_burn.mod
 
-do_one inlist_convert_header converted.mod LOGS/5_convert
+do_one inlist_convert_header converted.mod 5_convert
 cp converted.mod standard_converted.mod
 
-do_one inlist_finish_header final.mod LOGS/6_finish
+do_one inlist_finish_header final.mod 6_finish
 
 date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
 echo 'finished'
